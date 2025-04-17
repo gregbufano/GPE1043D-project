@@ -25,7 +25,7 @@ public class PlayerPawn : MonoBehaviour
 
     public void MoveFoward()
     {
-        Debug.Log("Move Foward");
+        //Debug.Log("Move Foward");
 
         if (rb != null)
         {
@@ -35,7 +35,7 @@ public class PlayerPawn : MonoBehaviour
 
     public void MoveBackward()
     {
-        Debug.Log("Move Backward");
+        //Debug.Log("Move Backward");
         
         if (rb != null)
         {
@@ -44,7 +44,7 @@ public class PlayerPawn : MonoBehaviour
     }
     public void YawClockwise()
     {
-        Debug.Log("Yaw Clockwise");
+        //Debug.Log("Yaw Clockwise");
         if (tf != null)
         {
             tf.Rotate(new Vector3(0, 1, 0) * rotationSpeed * Time.deltaTime);
@@ -52,7 +52,7 @@ public class PlayerPawn : MonoBehaviour
     }
     public void YawCounterClockwise()
     {
-        Debug.Log("Yaw CounterClockwise");
+        //Debug.Log("Yaw CounterClockwise");
         if (tf != null)
         {
            tf.Rotate(new Vector3(0, 1, 0) * -rotationSpeed * Time.deltaTime);
@@ -60,7 +60,7 @@ public class PlayerPawn : MonoBehaviour
     }
     public void RollClockwise()
     {
-        Debug.Log("Roll Clockwise");
+        //Debug.Log("Roll Clockwise");
         if (tf != null)
         {
             tf.Rotate(new Vector3(0, 0, 1) * -rotationSpeed * Time.deltaTime);
@@ -68,7 +68,7 @@ public class PlayerPawn : MonoBehaviour
     }
     public void RollCounterClockwise()
     {
-        Debug.Log("Roll CounterClockwise");
+        //Debug.Log("Roll CounterClockwise");
         if (tf != null)
         {
             tf.Rotate(new Vector3(0, 0, 1) * rotationSpeed * Time.deltaTime);
@@ -76,7 +76,7 @@ public class PlayerPawn : MonoBehaviour
     }
     public void PitchClockwise()
     {
-        Debug.Log("pitch Clockwise");
+        //Debug.Log("pitch Clockwise");
         if (tf != null)
         {
             tf.Rotate(new Vector3(1, 0, 0) * rotationSpeed * Time.deltaTime);
@@ -84,7 +84,7 @@ public class PlayerPawn : MonoBehaviour
     }
     public void PitchCounterClockwise()
     {
-         Debug.Log("Pitch CounterClockwise");
+        // Debug.Log("Pitch CounterClockwise");
          if (tf != null)
         {
             tf.Rotate(new Vector3(1, 0, 0) * -rotationSpeed * Time.deltaTime);

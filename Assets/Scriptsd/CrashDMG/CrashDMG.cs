@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CrashDMG : MonoBehaviour
 {
+    public Health healthComponent;
     public float Damage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,12 +15,11 @@ public class CrashDMG : MonoBehaviour
     {
         
     }
-    public void onTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collider){
+    if (collider.gameObject.TryGetComponent<Health>(out Health component))
     {
-        Debug.Log("Event Triggered");
-        if (GetComponent<Collider>().gameObject.TryGetComponent<Health>(out Health component))
-        {
-            component.TakeDamage(Damage);
-        }
+        component.TakeDamage(Damage);
+        
     }
+   }
 }
