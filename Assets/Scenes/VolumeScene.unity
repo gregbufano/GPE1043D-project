@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90bc9cfef3cf78e4b8647c1ecedf88ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: SampleScene
+  sceneName: Menu
   differentScene: 
 --- !u!4 &1919169144
 Transform:

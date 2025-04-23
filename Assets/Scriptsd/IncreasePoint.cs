@@ -18,8 +18,9 @@ public class IncreasePoint : MonoBehaviour
 
     public void OnTriggerEnter(Collider collider)
     {
-        GetPoints();
         Pickup.Play();
+        GetPoints();
+        
     }
     public void GetPoints()
     {
