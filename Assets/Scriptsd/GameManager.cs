@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class GameManager : MonoBehaviour
     public UIManager uiManager;
 
     public int score = 0;
-
+    public int lives = 1;
 
     public void Awake()
     {
@@ -31,9 +32,21 @@ public class GameManager : MonoBehaviour
     {
         
     }
+    public void ReduceLiveByOne()
+    {
+        lives--;
+        if (lives <= 0)
+        {
+            Lose();
+        }
+    }
     public void Win()
     {
-        // prep for adding win
+       if (score >= 200)
+            {
+        Debug.Log("You Win!");
+        SceneManager.LoadScene("WinScene");
+        }
     }
     public void Lose()
     {

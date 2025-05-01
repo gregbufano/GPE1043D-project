@@ -1879,6 +1879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiManager: {fileID: 462352761}
   score: 0
+  lives: 1
 --- !u!1 &1754418848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 4b440f170e81bec4aa725fdc02ca4c42, type: 3}
@@ -2329,7 +2330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthComponent: {fileID: 0}
-  Damage: 20
+  Damage: 100
 --- !u!135 &1837538806
 SphereCollider:
   m_ObjectHideFlags: 0
